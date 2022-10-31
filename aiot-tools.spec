@@ -21,6 +21,8 @@ Tools for flashing boards using MediaTek AIoT SoCs
 
 %prep
 %autosetup -p1 -n %{name}-main
+# Trick setuptools-scm
+git init
 
 %build
 %py_build
