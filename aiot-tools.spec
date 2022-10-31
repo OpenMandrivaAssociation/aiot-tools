@@ -13,6 +13,7 @@ URL: https://github.com/aiot-tools/aiot-tools
 License: MIT
 Group: Development/Tools
 BuildRequires: python%{pyver}dist(setuptools)
+BuildArch: noarch
 
 %description
 Tools for flashing boards using MediaTek AIoT SoCs
