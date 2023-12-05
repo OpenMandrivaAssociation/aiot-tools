@@ -4,7 +4,7 @@
 %define date 20221025
 
 Name: aiot-tools
-Version: 1.2
+Version: 1.3.0
 Release: %{?date:0.%{date}.}1
 Source0: https://gitlab.com/mediatek/aiot/bsp/aiot-tools/-/archive/main/aiot-tools-main.tar.bz2#/%{name}-%{date}.tar.bz2
 Patch0: pygpiod-version-req.patch
