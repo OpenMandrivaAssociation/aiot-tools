@@ -5,7 +5,7 @@
 
 Name: aiot-tools
 Version: 1.3.0
-Release: %{?date:0.%{date}.}2
+Release: %{?date:0.%{date}.}3
 Source0: https://gitlab.com/mediatek/aiot/bsp/aiot-tools/-/archive/main/aiot-tools-main.tar.bz2#/%{name}-%{date}.tar.bz2
 Patch0: pygpiod-version-req.patch
 Summary: Tools for flashing boards using MediaTek AIoT SoCs
@@ -14,6 +14,7 @@ License: MIT
 Group: Development/Tools
 BuildRequires: python%{pyver}dist(pip)
 BuildRequires: python%{pyver}dist(setuptools-scm)
+BuildRequires: pkgconfig(python3)
 BuildRequires: git-core
 BuildArch: noarch
 
@@ -34,4 +35,4 @@ git init
 %files
 %{_bindir}/*
 %{py_puresitedir}/aiot
-%{py_puresitedir}/aiot_tools-*.egg-info
+%{py_puresitedir}/aiot_tools-*.*-info
